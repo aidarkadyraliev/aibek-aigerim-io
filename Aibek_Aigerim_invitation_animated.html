@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ky">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Айбек &amp; Айгерим — 01.11.2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Marck+Script&family=Montserrat:wght@400;500;600&display=swap');
+    :root { --ink:#3d2d1b; --gold:#b89045; --blue:#fffaf0; --blue2:#f4e7cf; --mist:#806b4f; --wine:#a57b30; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:#eadfc9; font-family:Montserrat,Arial,sans-serif; text-align:center; }
+    .page { overflow:hidden; position:relative; min-height:100vh; background-color:var(--blue); background-image:radial-gradient(ellipse at 50% 50%,transparent 61%,rgba(184,144,69,.10) 62%,transparent 64%),radial-gradient(ellipse at 5% 10%,rgba(184,144,69,.15) 0 1px,transparent 1.5px),radial-gradient(ellipse at 75% 80%,rgba(184,144,69,.11) 0 1px,transparent 1.5px); background-size:auto,12px 12px,17px 17px; transition:filter .5s ease; }
+    .page:before,.page:after { content:""; position:absolute; width:390px; height:760px; border:1px solid rgba(184,144,69,.40); border-radius:0; pointer-events:none; left:50%; transform:translateX(-50%); }
+    .page:before { top:67px; } .page:after { top:83px; width:365px; height:728px; border-color:rgba(184,144,69,.23); }
+    .content { position:relative; z-index:1; width:min(100%,490px); margin:auto; padding:27px 27px 60px; }
+    .top { display:flex; justify-content:space-between; font-size:11px; letter-spacing:.14em; color:var(--mist); }
+    .hero { padding:79px 0 82px; min-height:600px; display:flex; flex-direction:column; align-items:center; }
+    .monogram { color:rgba(184,144,69,.18); font-family:"Cormorant Garamond",serif; font-size:190px; line-height:.54; font-style:italic; letter-spacing:-.2em; margin-left:-.2em; }
+    .names { margin-top:44px; font-family:"Marck Script","Brush Script MT",cursive; color:#1f1415; font-size:66px; line-height:.82; text-shadow:none; }
+    .names span { display:block; } .names span+span { margin-left:66px; }
+    .scroll { margin-top:auto; color:var(--mist); font-size:12px; letter-spacing:.12em; text-decoration:none; }
+    .mouse { display:block; width:19px; height:31px; margin:0 auto 13px; border:1px solid var(--gold); border-radius:12px; position:relative; }
+    .mouse:after { content:""; position:absolute; width:2px; height:6px; background:var(--gold); border-radius:2px; top:7px; left:8px; animation:wheel 1.5s infinite; } @keyframes wheel{50%{transform:translateY(7px);opacity:.2}}
+    .section { padding:59px 0 50px; position:relative; } .section:before { content:"✦"; color:var(--gold); font-size:13px; display:block; margin-bottom:24px; opacity:.8; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.24em; font-size:10px; color:var(--wine); margin:0 0 21px; }
+    h1,h2 { margin:0; font-family:"Cormorant Garamond",Georgia,serif; font-weight:500; } h1 { font-size:35px; } h2 { font-size:41px; font-style:italic; }
+    .script { font-family:"Marck Script","Brush Script MT",cursive; color:#281516; font-size:50px; line-height:1; }
+    .body { font-size:14px; line-height:1.8; color:#342322; max-width:360px; margin:23px auto 0; }
+    .rule { width:56px; border-top:1px solid var(--gold); margin:32px auto; }
+    .owners { font-size:15px; color:var(--mist); margin:0 0 12px; } .owners-name { font-family:"Marck Script",cursive; font-size:42px; color:#281516; }
+    .event { background:rgba(255,251,245,.75); border:1px solid rgba(184,144,69,.48); box-shadow:0 12px 35px #9a7d6740; padding:35px 20px; margin:8px 0 48px; }
+    .event-date { margin:17px 0 5px; font:500 26px "Cormorant Garamond",serif; letter-spacing:.04em; } .event-time { color:var(--gold); font-size:14px; letter-spacing:.16em; }
+    .calendar { max-width:340px; margin:25px auto 0; color:#342322; } .month { color:var(--wine); font-size:13px; letter-spacing:.29em; border-bottom:1px solid rgba(119,65,57,.45); padding-bottom:12px; margin-bottom:13px; }
+    .grid { display:grid; grid-template-columns:repeat(7,1fr); gap:7px 4px; font-size:12px; } .dow { color:var(--mist); font-size:10px; } .day { min-height:25px; display:grid; place-items:center; position:relative; } .chosen { color:#fff8e8; font-weight:600; } .chosen:before { content:"♡"; position:absolute; font:34px "Cormorant Garamond",serif; color:var(--gold); top:-10px; }
+    .address { font-size:16px; line-height:1.8; color:#342322; margin:22px auto 27px; } .map { display:inline-block; color:#fff9ef; text-decoration:none; padding:13px 22px; border:1px solid var(--wine); border-radius:2px; letter-spacing:.1em; text-transform:uppercase; font-size:10px; background:var(--wine); }
+    .rsvp { padding:33px 22px; background:rgba(255,251,245,.62); border:1px solid rgba(119,65,57,.32); } input[type=text] { width:100%; padding:13px; background:transparent; color:var(--ink); border:0; border-bottom:1px solid rgba(119,65,57,.5); outline:none; font:14px Montserrat; text-align:center; } input::placeholder { color:#846e68; }
+    .options { text-align:left; margin:21px 0 24px; font-size:13px; color:#342322; line-height:2.1; } label { display:block; } input[type=radio] { accent-color:var(--wine); margin-right:9px; } button { width:100%; padding:13px; cursor:pointer; border:1px solid var(--wine); background:var(--wine); color:#fff9ef; letter-spacing:.1em; text-transform:uppercase; font:600 10px Montserrat; }
+    .footer { position:relative; z-index:1; margin-top:55px; padding:33px 20px; background:linear-gradient(90deg,#8e6a29,#b89045,#8e6a29); color:#fffaf0; } .footer p { margin:0 0 15px; font:500 24px "Cormorant Garamond",serif; } .count { display:flex; justify-content:center; gap:9px; } .count div { min-width:55px; } .num { display:block; font:500 25px "Cormorant Garamond",serif; color:#fff0bf; } .unit { font-size:8px; letter-spacing:.08em; color:#fff8e5; }
+    .language-screen { position:fixed; z-index:10; inset:0; display:grid; place-items:center; padding:22px; background:rgba(3,14,31,.38); backdrop-filter:blur(11px); -webkit-backdrop-filter:blur(11px); transition:opacity .45s ease,visibility .45s ease; } .language-screen.hidden { opacity:0; visibility:hidden; }
+    .language-card { width:min(100%,350px); padding:40px 26px 30px; text-align:center; border:1px solid rgba(184,144,69,.55); background:linear-gradient(135deg,rgba(255,252,245,.96),rgba(244,231,207,.98)); box-shadow:0 24px 70px #6a522870; } .language-card h2 { font-size:37px; } .language-card p { color:#806b4f; font-size:13px; line-height:1.6; margin:13px 0 25px; } .language-choice { display:block; width:100%; margin:10px 0; padding:14px; color:#6f5120; border:1px solid rgba(184,144,69,.65); background:transparent; font:500 13px Montserrat; letter-spacing:.05em; text-transform:none; } .language-choice:hover { background:var(--wine); color:#fff8ee; }
+    .floral { position:absolute; z-index:0; width:205px; height:205px; pointer-events:none; filter:drop-shadow(1px 5px 4px rgba(92,65,25,.20)); } .floral.top { top:-18px; right:-36px; transform:rotate(22deg); } .floral.bottom { bottom:-18px; left:-36px; transform:rotate(202deg); } .floral path,.floral ellipse { fill:var(--wine); } .floral .light { fill:#d8b96e; } .floral .leaf { fill:#806225; }
+    /* Minimal beige-and-gold cover inspired by the supplied reference. */
+    .floral { display:none; }.content{padding-top:0}.top{position:absolute;z-index:2;top:25px;left:27px;right:27px;color:#fff9ed}.hero{position:relative;isolation:isolate;overflow:hidden;min-height:680px;margin:0 -27px 0;padding:108px 25px 42px;background:linear-gradient(130deg,#c7aa75,#e2c99b 50%,#b99a67);color:#fffdf7}.hero:before{content:'♡';position:absolute;z-index:-1;top:36px;left:0;right:0;color:#fffaf0;font:58px/1 "Cormorant Garamond",serif;opacity:.9}.hero:after{content:'';position:absolute;z-index:-1;inset:62px 32px 42px;border:1px solid rgba(255,252,243,.78);border-bottom:0}.monogram{display:none}.names{position:relative;margin-top:100px;color:#fffdf8;text-shadow:0 2px 5px #7b623947;font-size:62px}.hero-note{position:relative;color:#fffdf8;letter-spacing:.1em;font-size:13px}.scroll{position:absolute;bottom:26px;left:0;right:0;color:#fffdf8}.mouse{border-color:#fffdf8}.mouse:after{background:#fffdf8}.couple-silhouette{position:absolute;z-index:0;bottom:-2px;left:50%;width:260px;height:275px;transform:translateX(-50%);color:#fffdf8;filter:drop-shadow(0 1px 1px #84694433)}.section{background:#fffaf0;margin:0 -27px;padding-left:27px;padding-right:27px;border-top:1px solid #d9c29b}.footer{margin-left:-27px;margin-right:-27px}
+    .music-toggle { position:fixed; z-index:9; right:17px; bottom:17px; width:45px; height:45px; padding:0; border-radius:50%; border:1px solid #fff1dd; background:var(--wine); color:#fff8ee; box-shadow:0 4px 15px #35121c66; font-size:18px; text-transform:none; }
+    @media(max-width:380px){ .content{padding-left:20px;padding-right:20px}.names{font-size:57px}.hero{min-height:560px} }
+
+    /* CSS для падающих лепестков роз */
+    .petal {
+      position: absolute;
+      top: -10%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24"><path fill="%23b8273b" d="M10,0 C3,0 0,8 0,14 C0,20 10,24 10,24 C10,24 20,20 20,14 C20,8 17,0 10,0 z" opacity="0.85"/></svg>') no-repeat center center;
+      background-size: contain;
+      pointer-events: none; 
+      animation: fall linear forwards;
+    }
+    @keyframes fall {
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      20% { transform: translate(20px, 20vh) rotate(45deg); }
+      40% { transform: translate(-20px, 40vh) rotate(90deg); }
+      60% { transform: translate(20px, 60vh) rotate(135deg); }
+      80% { transform: translate(-20px, 80vh) rotate(180deg); opacity: 1; }
+      100% { transform: translate(0, 110vh) rotate(225deg); opacity: 0; }
+    }
+
+    /* Плавный cinematic-переход секций при скролле */
+    .section.fade-up,
+    .footer.fade-up {
+      opacity: 0;
+      transform: translate3d(0, 52px, 0) scale(.985);
+      filter: blur(5px);
+      clip-path: inset(8% 0 0 0);
+      transition:
+        opacity 1s cubic-bezier(.22, 1, .36, 1),
+        transform 1.05s cubic-bezier(.22, 1, .36, 1),
+        filter 1s cubic-bezier(.22, 1, .36, 1),
+        clip-path 1.05s cubic-bezier(.22, 1, .36, 1);
+      will-change: opacity, transform, filter, clip-path;
+    }
+
+    .section.fade-up.visible,
+    .footer.fade-up.visible {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+      filter: blur(0);
+      clip-path: inset(0 0 0 0);
+    }
+
+    /* Содержимое секции появляется чуть позже самой секции */
+    .fade-up > .eyebrow,
+    .fade-up > h2,
+    .fade-up > .body,
+    .fade-up > .script,
+    .fade-up > .rule,
+    .fade-up > .owners,
+    .fade-up > .owners-name,
+    .fade-up > .event,
+    .fade-up > .calendar,
+    .fade-up > .address,
+    .fade-up > .map,
+    .fade-up > .rsvp,
+    .fade-up > .count {
+      opacity: 0;
+      transform: translate3d(0, 18px, 0);
+      transition:
+        opacity .7s cubic-bezier(.22, 1, .36, 1),
+        transform .8s cubic-bezier(.22, 1, .36, 1);
+    }
+
+    .fade-up.visible > .eyebrow,
+    .fade-up.visible > h2,
+    .fade-up.visible > .body,
+    .fade-up.visible > .script,
+    .fade-up.visible > .rule,
+    .fade-up.visible > .owners,
+    .fade-up.visible > .owners-name,
+    .fade-up.visible > .event,
+    .fade-up.visible > .calendar,
+    .fade-up.visible > .address,
+    .fade-up.visible > .map,
+    .fade-up.visible > .rsvp,
+    .fade-up.visible > .count {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .fade-up.visible > *:nth-child(1) { transition-delay: .08s; }
+    .fade-up.visible > *:nth-child(2) { transition-delay: .14s; }
+    .fade-up.visible > *:nth-child(3) { transition-delay: .20s; }
+    .fade-up.visible > *:nth-child(4) { transition-delay: .26s; }
+    .fade-up.visible > *:nth-child(5) { transition-delay: .32s; }
+    .fade-up.visible > *:nth-child(6) { transition-delay: .38s; }
+    .fade-up.visible > *:nth-child(7) { transition-delay: .44s; }
+
+    /* Небольшой переход между секциями */
+    .section + .section {
+      position: relative;
+    }
+
+    .section + .section:after {
+      content: '✦';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%) scale(.7);
+      color: var(--gold);
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity .8s ease, transform .9s cubic-bezier(.22, 1, .36, 1);
+    }
+
+    .section.fade-up.visible + .section:after {
+      opacity: .65;
+      transform: translateX(-50%) scale(1);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .section.fade-up,
+      .footer.fade-up,
+      .fade-up > * {
+        transition: none !important;
+        transform: none !important;
+        filter: none !important;
+        clip-path: none !important;
+        opacity: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="language-screen" id="language-screen" role="dialog" aria-label="Тилди тандоо">
+    <div class="language-card"><h2 id="language-title">Кош келиңиз!</h2><p id="language-subtitle">Тилди тандаңыз / Выберите язык / Choose a language</p><button class="language-choice" data-lang="ky">Кыргызча</button><button class="language-choice" data-lang="ru">Русский</button><button class="language-choice" data-lang="en">English</button></div>
+  </div>
+  <main class="page">
+    <svg class="floral top" viewBox="0 0 200 200" aria-hidden="true"><path class="leaf" d="M105 101C148 39 185 28 198 26c-17 45-50 70-96 80Z"/><path class="leaf" d="M99 113C67 56 21 36 3 33c17 45 51 72 91 89Z"/><ellipse cx="102" cy="102" rx="23" ry="78"/><ellipse class="light" cx="102" cy="102" rx="23" ry="78" transform="rotate(45 102 102)"/><ellipse cx="102" cy="102" rx="23" ry="78" transform="rotate(90 102 102)"/><ellipse class="light" cx="102" cy="102" rx="23" ry="78" transform="rotate(135 102 102)"/><circle cx="102" cy="102" r="22" fill="#45101c"/><circle cx="102" cy="102" r="10" fill="#d07276"/></svg>
+    <svg class="floral bottom" viewBox="0 0 200 200" aria-hidden="true"><path class="leaf" d="M105 101C148 39 185 28 198 26c-17 45-50 70-96 80Z"/><path class="leaf" d="M99 113C67 56 21 36 3 33c17 45 51 72 91 89Z"/><ellipse cx="102" cy="102" rx="23" ry="78"/><ellipse class="light" cx="102" cy="102" rx="23" ry="78" transform="rotate(45 102 102)"/><ellipse cx="102" cy="102" rx="23" ry="78" transform="rotate(90 102 102)"/><ellipse class="light" cx="102" cy="102" rx="23" ry="78" transform="rotate(135 102 102)"/><circle cx="102" cy="102" r="22" fill="#45101c"/><circle cx="102" cy="102" r="10" fill="#d07276"/></svg>
+    <div class="content">
+      <div class="top"><span>01 · 11 · 2026</span><span>БИШКЕК</span></div>
+      <section class="hero">
+        <div class="monogram">А А</div>
+        <div class="names"><span>Айбек</span><span>Айгерим</span></div>
+        <svg class="couple-silhouette" viewBox="0 0 260 275" aria-hidden="true"><path fill="currentColor" d="M130 223C89 184 53 153 53 108c0-29 22-52 51-52 13 0 25 5 34 15 8-10 20-15 34-15 29 0 51 23 51 52 0 45-36 76-93 115Z"/><path d="M130 223C89 184 53 153 53 108c0-29 22-52 51-52 13 0 25 5 34 15 8-10 20-15 34-15 29 0 51 23 51 52 0 45-36 76-93 115Z" fill="none" stroke="#d9be87" stroke-width="3"/></svg>
+        <a href="#invite" class="scroll"><i class="mouse"></i><span data-i18n="scroll">ӨЙДӨ СҮРҮҢҮЗ</span></a>
+      </section>
+      
+      <!-- Добавлен класс fade-up для плавной анимации появления секции -->
+      <section class="section fade-up" id="invite">
+        <p class="eyebrow" data-i18n="greeting">Урматтуу коногубуз!</p>
+        <p class="body" data-i18n="inviteStart">Сиздерди</p>
+        <div class="script">Айбек</div>
+        <p class="body" style="margin:9px auto" data-i18n="with">менен</p>
+        <div class="script">Айгерим</div>
+        <p class="body" data-i18n="inviteText">жаңы үй-бүлө курган тойго күбө болуп, каалоо айтып, кадырлуу коногубуз болуп кетүүгө чакырабыз!</p>
+        <div class="rule"></div>
+        <p class="owners" data-i18n="hosts">Той ээлери:</p>
+        <div class="owners-name">Курманбек, Асель</div>
+      </section>
+      
+      <!-- Добавлен класс fade-up -->
+      <section class="section fade-up">
+        <h2 data-i18n="celebration">Той салтанаты</h2>
+        <div class="event"><p class="eyebrow" data-i18n="weekday">Жекшемби</p><div class="event-date" data-i18n="date">2026-жылдын 1-ноябры</div><div class="event-time" data-i18n="time">СААТ 16:00ДӨ БАШТАЛАТ</div></div>
+        <div class="calendar"><div class="month" data-i18n="month">НОЯБРЬ 2026</div><div class="grid" id="calendar-grid"></div></div>
+      </section>
+      
+      <!-- Добавлен класс fade-up -->
+      <section class="section fade-up">
+        <h2 data-i18n="addressTitle">Тойдун дареги</h2>
+        <p class="address">г. Бишкек<br>ул. Курманжан Датка, 267<br><strong>Anel Grand Hall</strong></p>
+        <a class="map" href="https://www.google.com/maps/search/?api=1&query=Anel+Grand+Hall,+%D0%91%D0%B8%D1%88%D0%BA%D0%B5%D0%BA" target="_blank" rel="noopener" data-i18n="map">Картаны ачуу</a>
+      </section>
+      
+      <!-- Добавлен класс fade-up -->
+      <section class="section fade-up">
+        <h2 data-i18n="rsvpTitle">Конок анкетасы</h2>
+        <p class="body" data-i18n="rsvpBody">Тойго катышууңузду төмөнкү анкетада ырастап коюуңузду өтүнөбүз:</p>
+        <form class="rsvp" id="rsvp-form"><input id="guest-name" type="text" placeholder="Атыңыз" aria-label="Атыңыз" required><div class="options"><label><input type="radio" name="answer" value="yes" required><span data-i18n="yes">Ооба, келем</span></label><label><input type="radio" name="answer" value="no"><span data-i18n="no">Тилекке каршы, келе албайм</span></label></div><button type="submit" data-i18n="send">Жоопту WhatsApp аркылуу жөнөтүү</button></form>
+      </section>
+    </div>
+    
+    <audio id="background-music" src="background-music.m4a" loop preload="metadata"></audio>
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Музыка" title="Музыка">♫</button>
+    
+    <!-- Добавлен класс fade-up -->
+    <footer class="footer fade-up">
+      <p data-i18n="footer">Кубанычыбызга ортоктош болуңуздар!</p>
+      <div class="count">
+        <div><span class="num" id="days">00</span><span class="unit" data-i18n="days">КҮН</span></div>
+        <div><span class="num" id="hours">00</span><span class="unit" data-i18n="hours">СААТ</span></div>
+        <div><span class="num" id="mins">00</span><span class="unit" data-i18n="mins">МҮНӨТ</span></div>
+        <div><span class="num" id="secs">00</span><span class="unit" data-i18n="secs">СЕКУНД</span></div>
+      </div>
+    </footer>
+  </main>
+  
+  <script>
+    const target=new Date('2026-11-01T16:00:00+06:00'); const ids=['days','hours','mins','secs'];
+    function tick(){let s=Math.max(0,Math.floor((target-Date.now())/1000)); const a=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60]; ids.forEach((id,i)=>document.getElementById(id).textContent=String(a[i]).padStart(2,'0'));} tick(); setInterval(tick,1000);
+    const copy={ky:{scroll:'ӨЙДӨ СҮРҮҢҮЗ',greeting:'Урматтуу коногубуз!',inviteStart:'Сиздерди',with:'менен',inviteText:'жаңы үй-бүлө курган тойго күбө болуп, каалоо айтып, кадырлуу коногубуз болуп кетүүгө чакырабыз!',hosts:'Той ээлери:',celebration:'Той салтанаты',weekday:'Жекшемби',date:'2026-жылдын 1-ноябры',time:'СААТ 16:00ДӨ БАШТАЛАТ',month:'НОЯБРЬ 2026',addressTitle:'Тойдун дареги',map:'Картаны ачуу',footer:'Кубанычыбызга ортоктош болуңуздар!',days:'КҮН',hours:'СААТ',mins:'МҮНӨТ',secs:'СЕКУНД',week:['дш','шш','шр','бш','жм','иш','жк'],rsvpTitle:'Конок анкетасы',rsvpBody:'Тойго катышууңузду төмөнкү анкетада ырастап коюуңузду өтүнөбүз:',yes:'Ооба, келем',no:'Тилекке каршы, келе албайм',send:'Жоопту WhatsApp аркылуу жөнөтүү',name:'Атыңыз',message:(n,a)=>`${n} ${a==='yes'?'келем деди':'тилекке каршы, келе албайм деди'}.\nАйбек & Айгерим — 01.11.2026, 16:00\nAnel Grand Hall`},ru:{scroll:'ПРОЛИСТАЙТЕ ВВЕРХ',greeting:'Дорогой гость!',inviteStart:'Приглашаем вас',with:'на свадьбу',inviteText:'Айбека и Айгерим — разделить с нами радость создания новой семьи и стать нашим дорогим гостем!',hosts:'Хозяева торжества:',celebration:'Свадебное торжество',weekday:'Воскресенье',date:'1 ноября 2026 года',time:'НАЧАЛО В 16:00',month:'НОЯБРЬ 2026',addressTitle:'Адрес торжества',map:'Открыть карту',footer:'Разделите с нами нашу радость!',days:'ДНЕЙ',hours:'ЧАСОВ',mins:'МИНУТ',secs:'СЕКУНД',week:['пн','вт','ср','чт','пт','сб','вс'],rsvpTitle:'Анкета гостя',rsvpBody:'Пожалуйста, подтвердите своё участие в празднике:',yes:'Да, приду',no:'К сожалению, не смогу прийти',send:'Отправить ответ через WhatsApp',name:'Ваше имя',message:(n,a)=>`${n} ${a==='yes'?'сказал(а), что придёт':'сказал(а), что не сможет прийти'}.\nАйбек & Айгерим — 01.11.2026, 16:00\nAnel Grand Hall`},en:{scroll:'SCROLL UP',greeting:'Dear guest!',inviteStart:'We invite you',with:'to the wedding of',inviteText:'Aibek and Aigerim to share the joy of creating a new family and celebrate this day with us!',hosts:'Hosts of the celebration:',celebration:'Wedding celebration',weekday:'Sunday',date:'1 November 2026',time:'STARTS AT 16:00',month:'NOVEMBER 2026',addressTitle:'Venue address',map:'Open map',footer:'Share our joy with us!',days:'DAYS',hours:'HOURS',mins:'MINUTES',secs:'SECONDS',week:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],rsvpTitle:'Guest RSVP',rsvpBody:'Please confirm your attendance using the form below:',yes:'Yes, I will attend',no:'Unfortunately, I cannot attend',send:'Send response via WhatsApp',name:'Your name',message:(n,a)=>`${n} ${a==='yes'?'will attend':'will not be able to attend'}.\nAibek & Aigerim — 01 Nov 2026, 16:00\nAnel Grand Hall`}};
+    function renderCalendar(t){const grid=document.getElementById('calendar-grid');grid.innerHTML=t.week.map(d=>`<span class="dow">${d}</span>`).join('')+Array(6).fill('<span class="day"></span>').join('')+Array.from({length:30},(_,i)=>`<span class="day ${i===0?'chosen':''}">${i+1}</span>`).join('');}
+    const music=document.getElementById('background-music'), musicToggle=document.getElementById('music-toggle'); music.volume=.28;
+    function updateMusicButton(){musicToggle.textContent=music.paused?'♫':'❚❚';} musicToggle.addEventListener('click',()=>{music.paused?music.play():music.pause();}); music.addEventListener('play',updateMusicButton); music.addEventListener('pause',updateMusicButton);
+    let lang='ky'; function setLanguage(next){lang=next;const t=copy[lang];document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(e=>e.textContent=t[e.dataset.i18n]);renderCalendar(t);const input=document.getElementById('guest-name');input.placeholder=t.name;input.setAttribute('aria-label',t.name);document.getElementById('language-screen').classList.add('hidden');music.play().catch(()=>updateMusicButton());}
+    document.querySelectorAll('.language-choice').forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));
+    // Add the celebration host's WhatsApp number here, digits only with country code, e.g. 996555123456.
+    const whatsappOwner='996502228420';
+    document.getElementById('rsvp-form').addEventListener('submit',e=>{e.preventDefault();const f=e.currentTarget;const name=document.getElementById('guest-name').value.trim();const answer=f.elements.answer.value;const text=copy[lang].message(name,answer);const link=whatsappOwner?`https://wa.me/${whatsappOwner}?text=${encodeURIComponent(text)}`:'https://wa.me/?text='+encodeURIComponent(text);window.open(link,'_blank','noopener');});
+
+    // --- Скрипт для создания падающих лепестков роз ---
+    function startFallingPetals() {
+      const petalContainer = document.createElement('div');
+      petalContainer.style.position = 'fixed';
+      petalContainer.style.top = '0';
+      petalContainer.style.left = '0';
+      petalContainer.style.width = '100vw';
+      petalContainer.style.height = '100vh';
+      petalContainer.style.pointerEvents = 'none';
+      petalContainer.style.overflow = 'hidden';
+      petalContainer.style.zIndex = '9999';
+      document.body.appendChild(petalContainer);
+
+      setInterval(() => {
+        const petal = document.createElement('div');
+        petal.classList.add('petal');
+        
+        petal.style.left = Math.random() * 100 + 'vw';
+        
+        const size = Math.random() * 15 + 10;
+        petal.style.width = size + 'px';
+        petal.style.height = (size * 1.2) + 'px';
+        
+        petal.style.animationDuration = (Math.random() * 5 + 4) + 's';
+        
+        petalContainer.appendChild(petal);
+        
+        setTimeout(() => petal.remove(), 9000);
+      }, 450);
+    }
+    
+    startFallingPetals();
+
+    // --- Cinematic-анимация секций при скролле ---
+    document.addEventListener("DOMContentLoaded", function() {
+      const animatedSections = document.querySelectorAll('.fade-up');
+
+      const fadeUpObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else if (entry.boundingClientRect.top > 0) {
+            // Если пользователь вернулся выше, секция сможет красиво появиться снова.
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '0px 0px -8% 0px',
+        threshold: 0.08
+      });
+
+      animatedSections.forEach(section => fadeUpObserver.observe(section));
+    });
+  </script>
+</body>
+</html>
